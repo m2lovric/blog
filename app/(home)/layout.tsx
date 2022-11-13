@@ -14,11 +14,13 @@ export default function RootLayout({
       */}
       <head />
       <body className='w-full h-full'>
-        <nav className='w-1/12 p-6 font-light flex justify-between'>
-          <Link href='/'>Home</Link>
+        <nav className='w-1/4 py-6 px-44 font-light flex justify-between'>
+          <Link href='/' className=' mr-24'>
+            Home
+          </Link>
           <Link href='dashboard/profile'>Profile</Link>
         </nav>
-        {children}
+        <main className='px-44'>{children}</main>
       </body>
     </html>
   );
